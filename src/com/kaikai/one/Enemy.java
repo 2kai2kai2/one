@@ -31,8 +31,8 @@ public class Enemy {
     }
 
     public void step() {
-        int dx = Main.playerx - x;
-        int dy = Main.playery - y;
+        int dx = Main.playerX - x;
+        int dy = Main.playerY - y;
         if (Math.abs(dx) > Math.abs(dy)) {
             if (dx > 0) {
                 dir = Direction.RIGHT;
@@ -50,8 +50,8 @@ public class Enemy {
                 y--;
             }
         }
-        if (Main.playerx == x && Main.playery == y) {
-            //YOU LOSE
+        if (Main.playerX == x && Main.playerY == y) {
+            // YOU LOSE
             Main.running = false;
         }
     }
