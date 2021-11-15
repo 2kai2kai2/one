@@ -1,0 +1,25 @@
+# Based on my workflow for tictactoe-3
+name: build_release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build_release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Build .class files
+        run: javac src/com/kaikai/one/*.java -d .
+      - name: Build .jar
+        run: jar cfe one.jar com/kaikai/one/Main com/kaikai/one/*
+      - name: Upload to Release
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'one.jar'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
