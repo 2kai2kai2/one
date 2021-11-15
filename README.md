@@ -14,9 +14,6 @@
 
 This was a little game I made during breaks during my freshman year of high school. I have since revisited it, updating with new skills and better tools.
 
-[View the original version here](https://github.com/2kai2kai2/one/tree/47da10623d1e926d05eca522970b7d975aa36a50).
-Originally, this project was purely in the terminal and had an ascii art interface.
-
 ----
 
 ## Gameplay
@@ -37,3 +34,16 @@ Each defeated enemy grants ten points; note that this still applies when multipl
 ![Gameplay](assets/README/gameplay_1.gif)
 
 *Recording has been accelerated for display purposes.*
+
+----
+
+## Original Version
+
+[
+![Original Version](https://img.shields.io/badge/release-v1.0.0-blue?logo=github)
+](https://github.com/2kai2kai2/one/releases/tag/v1.0.0)
+
+This is the version I made as a highschool freshman-- I credit this game with being the start of my building real standalone hobby software projects other than Minecraft plugins/mods and a number of half-finished or demo projects.
+
+[**View code here**](https://github.com/2kai2kai2/one/tree/47da10623d1e926d05eca522970b7d975aa36a50)
+Originally, this project was purely in the terminal and had an ascii art interface.
